@@ -15,7 +15,7 @@ const Register = () => {
           className="block w-full rounded-sm p-2 mb-2 border"
         />
         <button className="bg-blue-500 text-white block w-full rounded-sm">
-          Register
+          Sign Up
         </button>
       </form>
     </div>
