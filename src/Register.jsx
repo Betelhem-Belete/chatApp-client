@@ -2,16 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 
-const Register = () => {
+export default function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  async function Register(ev) {
+  async function register(ev) {
     ev.preventDefault();
-    await axios.post('/Register', { username, password });
+    await axios.post('/register', { username, password });
   }
   return (
     <div className="bg-blue-50 h-screen flex items-center">
-      <form action="" className="w-64 mx-auto" onSubmit={Register}>
+      <form className="w-64 mx-auto" onSubmit={register}>
         <input
           value={username}
           onChange={(ev) => setUsername(ev.target.value)}
@@ -32,6 +32,4 @@ const Register = () => {
       </form>
     </div>
   );
-};
-
-export default Register;
+}
