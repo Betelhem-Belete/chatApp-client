@@ -1,5 +1,5 @@
 import Register from "./Register";
-import {useContext} from 'react';
+import {useContext, useEffect} from 'react';
 import {UserContext} from './UserContext.jsx';
 
 export default function Routes(){
