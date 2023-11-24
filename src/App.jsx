@@ -1,4 +1,3 @@
-// import Register from './Register';
 import axios from 'axios';
 import {UserContextProvider} from './UserContext';
 // import {useContext} from 'react';
